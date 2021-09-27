@@ -26,7 +26,7 @@ a.wd-post:link, a.wd-post:visited {
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    height:80px;
+    height:75px;
 }
 
 a.wd-post:hover, a.wd-post:active {
@@ -180,7 +180,7 @@ a.wd-post:hover, a.wd-post:active {
 
 .wd-pos-relative-nudge-top-right {
     position: relative;
-    bottom: 60px;
+    bottom: 65px;
 }
 
 .wd-pos-relative-nudge-bottom {
@@ -196,7 +196,7 @@ a.wd-post:hover, a.wd-post:active {
 }
 .wd-pos-relative-nudge-top-right-type2 {
     position: relative;
-    bottom: 51px;
+    bottom: 55px;
 }
 
 .wd-pos-absolute-from-right {
