@@ -1,5 +1,7 @@
 body {
     background: black;
+    padding-left: 16px;
+    padding-top: 12px;
 }
 a.wd-options:link, a.wd-options:visited {
     color: white;
@@ -88,6 +90,9 @@ a.wd-post:hover, a.wd-post:active {
 .wd-fg-color-white
 {color: white}
 
+.wd-fg-color-red
+{color: #f00; }
+
 .wd-float-left {
     float: left;
 }
@@ -121,6 +126,10 @@ a.wd-post:hover, a.wd-post:active {
 
 .wd-dimension-height {
     height:240px;
+}
+
+.wd-dimension-width {
+    width:640px;
 }
 
 .wd-dimension-post {
@@ -206,7 +215,8 @@ a.wd-post:hover, a.wd-post:active {
 .wd-border-red { border-color: #ff7070; }
 .wd-border-blue { border-color: #7070ff; }
 .wd-border-darkgray { border-color: rgb(47, 51, 54); }
-.wd-border-solid-bottom {border-bottom: 1px solid; border-bottom-color: rgb(47, 51, 54);}
+.wd-border-solid-bottom {border-bottom: 1px solid; border-bottom-color: rgb(47, 51, 54); width: 640px}
+
 
 .wd-margin-top {
     margin-top: 40px;
@@ -240,6 +250,10 @@ a.wd-post:hover, a.wd-post:active {
 
 .wd-margin-top {
     margin-top: 12px;
+}
+
+.wd-margin-top2 {
+    margin-top: 20px;
 }
 
 .wd-pos-relative-nudge-right {
