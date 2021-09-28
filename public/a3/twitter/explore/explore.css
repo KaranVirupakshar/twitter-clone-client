@@ -187,7 +187,7 @@ a.wd-gear:hover, a.wd-gear:active {
 }
 
 .wd-padded-top {
-   padding-top: 1px;
+   padding-top: 0px;
 }
 
 
@@ -237,7 +237,7 @@ a.wd-gear:hover, a.wd-gear:active {
 }
 
 .wd-margin-all-around2 {
-    margin: 10px;
+    margin: 4px;
 }
 
 .wd-pos-relative-nudge-right {
@@ -270,6 +270,12 @@ a.wd-gear:hover, a.wd-gear:active {
 .wd-pos-relative-nudge-top-right-type2 {
     position: relative;
     bottom: 55px;
+}
+
+.wd-pos-relative-nudge-top {
+    position: relative;
+    bottom: 8px;
+
 }
 
 .wd-pos-absolute-from-right {
