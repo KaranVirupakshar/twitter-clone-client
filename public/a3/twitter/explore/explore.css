@@ -28,11 +28,30 @@ a.wd-post:link, a.wd-post:visited {
     text-align: left;
     text-decoration: none;
     display: inline-block;
-    height:76px;
+    height:80px;
     color: white;
 }
 
 a.wd-post:hover, a.wd-post:active {
+    background-color: rgb(47, 51, 54);
+    color: rgb(29,161,242);
+    border-bottom: 0px solid; border-bottom-color: rgb(29,161,242);
+
+}
+
+a.wd-gear:link, a.wd-gear:visited {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    width: 0%;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    height:10px;
+    color: white;
+}
+
+a.wd-gear:hover, a.wd-gear:active {
     background-color: rgb(47, 51, 54);
     color: rgb(29,161,242);
     border-bottom: 0px solid; border-bottom-color: rgb(29,161,242);
@@ -101,7 +120,7 @@ a.wd-post:hover, a.wd-post:active {
 }
 
 .wd-dimension-landscape {
-    width: 150px;
+    width: 123px;
     height: 50px;
 }
 
@@ -111,13 +130,20 @@ a.wd-post:hover, a.wd-post:active {
 }
 
 .wd-dimension-horizontal {
-    width: 700px;
-    height:40px;
+    width: 530px;
+    height:35px;
 }
 
 .wd-dimension-page {
-    width: 900px;
-    height: 105px;
+    width: 740px;
+    height: 110px;
+}
+
+.icon{
+    background-image:url(search.png);
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-size: 17px 17px;
 }
 
 .wd-dimension-height {
@@ -132,9 +158,16 @@ a.wd-post:hover, a.wd-post:active {
     padding: 1px;
 }
 
+.wd-padded-left3 {
+    padding-left: 16px;
+}
+
+.wd-padded-left2 {
+    padding-left: 25px;
+}
 
 .wd-padded-left {
-    padding-left: 50px;
+    padding-left: 60px;
 }
 
 .wd-padded-top-left {
@@ -156,7 +189,7 @@ a.wd-post:hover, a.wd-post:active {
 }
 
 .wd-padded-top {
-   padding-top: 9px;
+   padding-top: 1px;
 }
 
 
@@ -178,8 +211,6 @@ a.wd-post:hover, a.wd-post:active {
 .wd-border-solid-bottom {border-bottom: 4px solid; border-bottom-color: rgb(29,161,242);}
 .wd-border-solid-top {border-top: 20px solid; border-top-color: rgb(47, 51, 54);}
 
-
-
 .wd-margin-bottom {
     margin-bottom: 10px;
 }
@@ -193,18 +224,28 @@ a.wd-post:hover, a.wd-post:active {
     margin-left: 12px;
 }
 
+
 .wd-margin-right {
     margin-right: 160px;
 }
+
+.wd-margin-top2 {
+    margin-right: 12px;
+}
+
 
 .wd-margin-all-around {
     margin: 16px;
 }
 
+.wd-margin-all-around2 {
+    margin: 10px;
+}
+
 .wd-pos-relative-nudge-right {
     position: relative;
     right: 125px;
-    top: 2px;
+    top: 4px;
 }
 
 .wd-pos-relative-nudge-left {
