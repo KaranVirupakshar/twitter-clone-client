@@ -3,23 +3,6 @@ body {
     padding-left: 10px;
 }
 
-a:link, a:visited {
-    color: inherit;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    height: 20px;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a:hover, a:active {
-    background-color: rgb(47, 51, 54);
-    color: rgb(29,161,242);
-    border-bottom: 4px solid; border-bottom-color: rgb(29,161,242);
-}
-
 a.wd-post:link, a.wd-post:visited {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -281,4 +264,21 @@ a.wd-gear:hover, a.wd-gear:active {
 .wd-pos-absolute-from-right {
     position: absolute;
     right: 15px;
+}
+
+a:link, a:visited {
+    color: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: rgb(47, 51, 54);
+    color: rgb(29,161,242);
+    border-bottom: 4px solid; border-bottom-color: rgb(29,161,242);
 }

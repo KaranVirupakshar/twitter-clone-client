@@ -133,29 +133,29 @@ body{
 
 .flex-container {
     border-width: 5px;
-    border-color: black;
+    border-color: goldenrod;
     border-style: solid;
 }
 .flex-box {
-    border: 5px gray solid;
+    border: 5px steelblue solid;
     margin: 10px;
     padding: 10px;
 }
 .flex-box-1 {
-    background-color: yellow;
+    background-color: bisque;
 }
 .flex-box-2 {
-    background-color: blue;
-    color: white;
+    background-color: silver;
+    color: saddlebrown;
 }
 .flex-box-3 {
-    background-color: red;
-    color: white;
+    background-color: thistle;
+    color: darkblue;
 }
 
 .flex-container1 {
     border-width: 5px;
-    border-color: black;
+    border-color: rebeccapurple;
     border-style: solid;
     display: flex;
 }
@@ -163,7 +163,7 @@ body{
 .flex-container2 {
     display: flex;
     border-width: 5px;
-    border-color: black;
+    border-color: darkolivegreen;
     border-style: solid;
     justify-content: center;
 }
@@ -171,7 +171,7 @@ body{
 .flex-container3 {
     display: flex;
     border-width: 5px;
-    border-color: black;
+    border-color: steelblue;
     border-style: solid;
     justify-content: end;
 }
@@ -179,7 +179,7 @@ body{
 .flex-container4 {
     display: flex;
     border-width: 5px;
-    border-color: black;
+    border-color: rosybrown;
     border-style: solid;
     justify-content: space-around;
 }
@@ -187,7 +187,7 @@ body{
 .flex-container5 {
     display: flex;
     border-width: 5px;
-    border-color: black;
+    border-color: aqua;
     border-style: solid;
     justify-content: space-between;
 }
@@ -195,7 +195,7 @@ body{
 .flex-container6 {
     display: flex;
     border-width: 5px;
-    border-color: black;
+    border-color: hotpink;
     border-style: solid;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -204,7 +204,7 @@ body{
 .flex-container7 {
     display: flex;
     border-width: 5px;
-    border-color: black;
+    border-color: lightseagreen;
     border-style: solid;
     justify-content: space-evenly;
     align-items: center;
@@ -212,43 +212,67 @@ body{
 
 .flex-container8 {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    border-width: 5px;
+    border-color: maroon;
+    border-style: solid;
+
 }
 .flex-container8 > .flex-box {
     flex-basis: 100%;
+
 }
 
-@media (min-width: 0px) and (max-width: 300px) {
-    h1 {
-        color: red;
+@media (min-width: 0px) and (max-width: 700px) {
+    body {
+        background-color: rosybrown;
+        color: black;
     }
-
+    h1 {
+        color: slateblue;
+    }
+    h2 {
+        color: turquoise;
+    }
     p {
-        color: #ff7070;
+        color: purple;
     }
     .media-query {
         background-color: yellow;
         color: white;
     }
 }
-@media (min-width: 300px) and (max-width: 600px) {
-    h1 {
-        color: #61dafb;
+@media (min-width: 700px) and (max-width: 1000px) {
+    body {
+        background-color: aliceblue;
+        color: black;
     }
-
+    h1 {
+        color: darkgreen;
+    }
+    h2 {
+        color: red;
+    }
     p {
-        color: purple;
+        color: darkkhaki;
     }
     .media-query {
         background-color: yellow;
         color: black;
     }
 }
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
     body {
-        background-color: red;
-        color: white;
+        background-color: mistyrose;
+        color: black;
+    }
+    h1 {
+        color: fuchsia;
+    }
+    h2 {
+        color: goldenrod;
+    }
+    p {
+        color: cornflowerblue;
     }
     .media-query {
         background-color: blue;

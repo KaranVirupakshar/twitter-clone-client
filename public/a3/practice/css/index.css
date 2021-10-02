@@ -1,4 +1,4 @@
-/*p {
+/*p{
     background-color: blue;
     color: white;
 }*/
@@ -167,6 +167,7 @@ p#id-selector-2 {
 .float-done {
     clear: both;
 }
+
 .grid-row {
     clear: both;
 }

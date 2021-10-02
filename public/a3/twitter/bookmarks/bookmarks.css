@@ -93,6 +93,10 @@ a.wd-post:hover, a.wd-post:active {
 .wd-fg-color-red
 {color: #f00; }
 
+.wd-fg-color-lightgray
+{color: rgb(195,195,195); }
+
+
 .wd-float-left {
     float: left;
 }
@@ -134,7 +138,7 @@ a.wd-post:hover, a.wd-post:active {
 
 .wd-dimension-post {
     width:506px;
-}
+}
 
 .wd-dimension-below-post {
     width:60px;
