@@ -9,8 +9,14 @@ body {
 { background-color: black; }
 
 .wd-bg-color-darkgray
-{ background-color: rgb(47, 51, 54); }
+{ background-color: rgb(38, 38, 38); }
 
+.wd-bg-color-grayish
+{ background-color: rgb(80, 80, 80); }
+
+.wd-font-blue {
+    color: rgb(29,161,242);;
+}
 .wd-bg-color-blue
 { background-color: rgb(29,161,242); }
 
@@ -31,6 +37,7 @@ body {
     margin-top: 6px;
 }
 
+
 .list-group-item {
     color: white;
     border-color:rgb(30,30,30);
@@ -40,6 +47,7 @@ a.list-group-item:hover{
     background-color: rgb(30,30,30);
     color: white;
 }
+
 
 .list-group>.active{
     background-color: rgb(30,30,30);
@@ -88,6 +96,13 @@ border: none;
     border-bottom-color: rgb(29,161,242);
 }
 
+.wd-fonts-highlight {
+    font-size: 16px;
+    color: rgb(110,118,125);
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+
+
+}
 .wd-fonts-bold {
     font-weight: bold;
 }
@@ -120,15 +135,14 @@ border: none;
     height: 50px;
 }
 
-.list-group-item {
-    background-color: black;
-}
-
 .wd-border-darkgray {
     border-color: rgb(30,30,30);
 }
 
 .wd-border-solid-bottom {border-bottom: 4px solid; border-bottom-color: rgb(29,161,242);}
+
+.wd-border-solid-rounded-bottom {border-bottom: 4px solid; border-bottom-color: rgb(29,161,242); border-bottom-left-radius: 20px}
+
 
 
 
@@ -160,4 +174,14 @@ border: none;
 
 .wd-rounded-corners-all-around {
     border-radius: 40px;
+}
+
+.wd-rounded-bottom-corners {
+    border-bottom-left-radius: 20px; !important;
+    border-bottom-right-radius: 20px; !important;
+}
+
+.wd-rounded-top-corners {
+    border-top-left-radius: 20px; !important;
+    border-top-right-radius: 20px; !important;
 }
