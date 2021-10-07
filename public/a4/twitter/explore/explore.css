@@ -1,5 +1,5 @@
 a{
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -39,13 +39,13 @@ body {
 
 
 .list-group-item {
-    color: white;
+    color: rgb(245,248,250);
     border-color:rgb(30,30,30);
 }
 
 a.list-group-item:hover{
     background-color: rgb(30,30,30);
-    color: white;
+    color: rgb(245,248,250);
 }
 
 
@@ -61,15 +61,15 @@ a.list-group-item:hover{
 
 .nav-item {
     background-color: black;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(110,118,125);
     font-weight: bold;
-
+    overflow: hidden;
 }
 
 .nav-link {
     background-color: black;
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(110,118,125);
 
 
@@ -99,7 +99,7 @@ border: none;
 .wd-fonts-highlight {
     font-size: 16px;
     color: rgb(110,118,125);
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
 
 }
@@ -108,11 +108,11 @@ border: none;
 }
 
 .wd-fonts-family {
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .wd-fonts-white {
-    color: white;
+    color: rgb(245,248,250);
 }
 
 .wd-fonts-size14 {
@@ -126,15 +126,19 @@ border: none;
 }
 
 .wd-fonts-title{
-    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     color: rgb(110,118,125);
 }
 
 .wd-image-size {
-    height: 50px;
+    height: 45px;
+    margin: 0px;
 }
 
+.img-fluid {
+    min-width: 40px;
+}
 .wd-border-darkgray {
     border-color: rgb(30,30,30);
 }
@@ -181,7 +185,19 @@ border: none;
     border-bottom-right-radius: 20px; !important;
 }
 
+.wd-float-left {
+    float: left;
+}
+.wd-float-done {
+    clear: both;
+}
+
 .wd-rounded-top-corners {
     border-top-left-radius: 20px; !important;
     border-top-right-radius: 20px; !important;
+}
+.wd-arrange{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
