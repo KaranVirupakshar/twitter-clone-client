@@ -1,5 +1,7 @@
 a{
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: black;
+
 }
 
 body {
@@ -42,6 +44,8 @@ body {
     color: rgb(245,248,250);
     border-color:rgb(30,30,30);
 }
+
+
 
 a.list-group-item:hover{
     background-color: rgb(30,30,30);
@@ -196,8 +200,7 @@ border: none;
     border-top-left-radius: 20px; !important;
     border-top-right-radius: 20px; !important;
 }
-.wd-arrange{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+
+.btn-primary:hover {
+    background-color: rgb(29,161,242);
 }
