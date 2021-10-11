@@ -1,0 +1,210 @@
+a{
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: black;
+
+}
+
+body {
+    background-color: black;
+}
+.wd-bg-color-black
+{ background-color: black; }
+
+.wd-bg-color-darkgray
+{ background-color: rgb(38, 38, 38); }
+
+.wd-bg-color-grayish
+{ background-color: rgb(80, 80, 80); }
+
+.wd-font-blue {
+    color: rgb(29,161,242);
+    font-size: 15px;
+}
+.wd-bg-color-blue
+{ background-color: rgb(29,161,242); }
+
+.wd-bg-color-salmon
+{ background-color: darksalmon }
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+}
+
+.wd-text-large {
+    font-size: 200%;
+}
+
+.wd-margin-thin-top {
+    margin-top: 6px;
+}
+
+
+.list-group-item {
+    color: rgb(245,248,250);
+    border-color:rgb(30,30,30);
+}
+
+
+
+a.list-group-item:hover{
+    background-color: rgb(30,30,30);
+    color: rgb(245,248,250);
+}
+
+
+.list-group>.active{
+    background-color: rgb(30,30,30);
+    border: none;
+    font-weight: bold;
+}
+
+.nav {
+    border-bottom-color: black;
+}
+
+.nav-item {
+    background-color: black;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(110,118,125);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.nav-link {
+    background-color: black;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(110,118,125);
+
+
+}
+
+a.active.nav-link{background-color: black!important;
+border: none;
+    border-bottom: 4px solid!important; border-bottom-color: rgb(29,161,242)!important;
+}
+
+
+
+.nav-item>a:hover {
+    background-color: rgb(30,30,30);
+    color: rgb(110,118,125);
+    border: none;
+    border-bottom: 4px solid!important;
+    border-bottom-color: rgb(29,161,242)!important;}
+
+.nav-item>a.active {
+    background-color: red;
+    color: rgb(110,118,125)!important;
+    border-bottom: 3px solid;
+    border-bottom-color: rgb(29,161,242);
+}
+
+.wd-fonts-highlight {
+    font-size: 16px;
+    color: rgb(110,118,125);
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+
+}
+.wd-fonts-bold {
+    font-weight: bold;
+}
+
+.wd-fonts-family {
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wd-fonts-white {
+    color: rgb(245,248,250);
+}
+
+.wd-fonts-size14 {
+    font-size: 14px;
+
+}
+
+.wd-fonts-size20 {
+    font-size: 22px;
+
+}
+
+.wd-fonts-title{
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: rgb(110,118,125);
+}
+
+.wd-image-size {
+    height: 45px;
+    margin: 0px;
+}
+
+.img-fluid {
+    min-width: 40px;
+}
+.wd-border-darkgray {
+    border-color: rgb(30,30,30);
+}
+
+.wd-border-left-right {border: 4px solid; border-left: solid;}
+
+
+.wd-border-solid-bottom {border-bottom: 4px solid; border-bottom-color: rgb(29,161,242);}
+
+.wd-border-solid-rounded-bottom {border-bottom: 4px solid; border-bottom-color: rgb(29,161,242); border-bottom-left-radius: 20px}
+
+
+
+
+.icon{
+    background-image:url(search.png);
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
+    background-size: 17px 17px;
+}
+
+
+.wd-border-none {
+    border: none;
+}
+.wd-override-button-follow {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-color: white;
+}
+
+
+
+.wd-override-button-tweet {
+    background-color: rgb(29,161,242);
+    color: white;
+    font-weight: bold;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 40px;
+}
+
+.wd-rounded-bottom-corners {
+    border-bottom-left-radius: 20px; !important;
+    border-bottom-right-radius: 20px; !important;
+}
+
+.wd-float-left {
+    float: left;
+}
+.wd-float-done {
+    clear: both;
+}
+
+.wd-rounded-top-corners {
+    border-top-left-radius: 20px; !important;
+    border-top-right-radius: 20px; !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(29,161,242);
+}
