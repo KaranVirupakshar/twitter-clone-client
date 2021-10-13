@@ -9,6 +9,10 @@ a{
 .wd-bg-color-darkgray
 { background-color: rgb(38, 38, 38); }
 
+
+.wd-bg-color-darkgray-1
+{ background-color: #222; }
+
 .wd-bg-color-grayish
 { background-color: rgb(80, 80, 80); }
 
@@ -182,11 +186,11 @@ a{
 }
 
 .wd-margin-left {
-    margin-left: 4px;
+    margin-left: 0px;
 }
 
 .wd-margin-left2 {
-    margin-left: 90px;
+    margin-left: 80px;
 }
 
 .wd-dimension-post {
@@ -204,6 +208,11 @@ a{
 
 .wd-border-solid { border-style: solid; }
 .wd-border-thin { border-width: 1px; }
+
+.wd-border-top { border-top-width: 1px; }
+
+.wd-border-bottom { border-top-width: 1px; }
+
 
 
 .wd-thinrounded-corners-all-around {
