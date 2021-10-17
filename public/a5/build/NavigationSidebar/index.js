@@ -1,5 +1,5 @@
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
     return(`
                 <div class="list-group wd-fonts-family">
     
@@ -11,7 +11,8 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
     
-                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none">
+                    <a href="../HomeScreen/home.html" class="list-group-item list-group-item-action py-3 wd-border-none
+                    ${active === 'Home' ? 'active' : ''}">
                         <div class="row">
                             <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
                                 <i class="fas fa-home"></i>
@@ -22,7 +23,8 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
     
-                    <a href="#" class="list-group-item list-group-item-action active py-3 wd-border-none" aria-current="true" >
+                    <a href="../ExploreScreen/explore.html" class="list-group-item list-group-item-action py-3 wd-border-none 
+                    ${active === 'Explore' ? 'active' : ''}"  >
                         <div class="row">
                             <div class="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                 <i class="fas fa-hashtag"></i>
@@ -33,7 +35,8 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
     
-                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none">
+                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none
+                    ${active === 'notifications' ? 'active' : ''}">
                         <div class="row">
                             <div class="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                 <i class="far fa-bell"></i>
@@ -44,7 +47,8 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
     
-                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none">
+                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none
+                    ${active === 'messages' ? 'active' : ''}">
                         <div class="row">
                             <div class="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                 <i class="far fa-envelope"></i>
@@ -55,7 +59,8 @@ const NavigationSidebar = () => {
                         </div>
                     </a>
     
-                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none">
+                    <a href="#" class="list-group-item list-group-item-action py-3 wd-border-none
+                     ${active === 'bookmarks' ? 'active' : ''}">
                         <div class="row">
                             <div class="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                 <i class="far fa-bookmark"></i>

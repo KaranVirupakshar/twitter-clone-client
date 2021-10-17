@@ -22,16 +22,14 @@ const PostItem = (homepost) => {
                     <div class="ms-2 mb-1 mt-1" > ${homepost.linkicon}  ${homepost.link} </div>
           </div>
         
-        <div class="row">
         
-
-        <div class=" ms-2 py-3" >
-            <a class="wd-fonts-highlight ms-3" style="text-decoration: none;"> <i class="far fa-comment"></i> <span class="wd-margin-left"> ${homepost.message} </span></a>
-            <a class="wd-fonts-highlight wd-margin-left2" style="text-decoration: none;"> <i class="fa fa-retweet"></i> <span class="wd-margin-left"> ${homepost.retweet} </span></a>
-            <a class="wd-fonts-highlight wd-margin-left2" style="text-decoration: none;"> <span class="wd-fg-color-red"> <i class="far fa-heart"></i> </span>  <span class="wd-margin-left">${homepost.like} </span></a>
-            <a class="wd-fonts-highlight wd-margin-left2" style="text-decoration: none;"> <i class="fa fa-upload"></i> <span class="wd-margin-left"> </span></a>
+        <div class="py-3 d-flex justify-content-evenly" >
+            <a class="wd-fonts-highlight" style="text-decoration: none;"> <i class="far fa-comment"></i> <span class="wd-margin-left"> ${homepost.message} </span></a>
+            <a class="wd-fonts-highlight ms-4" style="text-decoration: none;"> <i class="fa fa-retweet"></i> <span class="wd-margin-left"> ${homepost.retweet} </span></a>
+            <a class="wd-fonts-highlight ms-4" style="text-decoration: none;"> <span class="wd-fg-color-red"> <i class="far fa-heart"></i> </span>  <span class="wd-margin-left">${homepost.like} </span></a>
+            <a class="wd-fonts-highlight px-4" style="text-decoration: none;"> <i class="fa fa-upload"></i> <span class="wd-margin-left"> </span></a>
         </div>
-        </div>
+        
    
    
    

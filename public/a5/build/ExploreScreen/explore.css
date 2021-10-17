@@ -91,7 +91,7 @@ a{
 }
 
 .img-fluid {
-    min-width: 50px;
+    min-width: 40px;
 }
 .wd-border-darkgray {
     border-color: rgb(40,40,40);
