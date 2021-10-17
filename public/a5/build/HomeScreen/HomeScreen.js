@@ -1,3 +1,4 @@
+/* global $ */
 
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostList from "../PostList/index.js";

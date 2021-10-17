@@ -29,10 +29,6 @@ const PostItem = (homepost) => {
             <a class="wd-fonts-highlight ms-4" style="text-decoration: none;"> <span class="wd-fg-color-red"> <i class="far fa-heart"></i> </span>  <span class="wd-margin-left">${homepost.like} </span></a>
             <a class="wd-fonts-highlight px-4" style="text-decoration: none;"> <i class="fa fa-upload"></i> <span class="wd-margin-left"> </span></a>
         </div>
-        
-   
-   
-   
    
     </div>
     </div>

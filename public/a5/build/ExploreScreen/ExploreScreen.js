@@ -1,3 +1,4 @@
+/* global $ */
 
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
