@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 //import './index.css';
 import App from './App';
 //import reportWebVitals from './reportWebVitals';
+import Exam from "./components/learner/exam";
+import Hello from "./components/learner/hello";
+import App2 from "./components/learner/App2";
 
 ReactDOM.render(
     <App/>,
