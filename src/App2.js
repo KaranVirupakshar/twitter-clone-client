@@ -6,7 +6,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import Practice from "./components/a7/Practice";
 import Build from "./components/a7/Build";
 
-function App() {
+function App2() {
     return (
         <BrowserRouter>
             <div className="container">
@@ -22,4 +22,4 @@ function App() {
 }
 
 
-export default App;
+export default App2;

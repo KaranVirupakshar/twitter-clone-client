@@ -9,7 +9,6 @@ const PostItem = (
     }) => {
     return(
         <>
-
     <div className="row  wd-border-solid wd-border-thin wd-border-darkgray wd-fonts-family">
           <div className="col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
                 <div className="py-2 px-1" ><img className="wd-rounded-corners-all-around" src={homepost.avatarIcon} width="54px" height="54px"/></div>
@@ -40,7 +39,7 @@ const PostItem = (
             <div className="" > <img className={`wd-top-rounded  wd-border-thin wd-border-darkgray ${homepost.handle === '@elonmusk' ? 'wd-border-solid' : 'wd-bottom-rounded'}`} src={homepost.image} width="100%" height="274px"/> </div>
                     <div className={`ms-2 wd-fonts-white ${homepost.handle === "@elonmusk" ? 'mt-2' : ''}`} > <span className="wd-fonts-bold"> {homepost.imageTitle} </span></div>
                     <div className="ms-2 me-2" > {homepost.imageDesc} </div>
-                    <div className="ms-2 mb-1 mt-1" > {homepost.linkicon}  {homepost.link} </div>
+              <div className="ms-2 mb-1 mt-1" > {homepost.handle === "@elonmusk" ? <span><i class = "fas fa-link"></i> </span> : ''}  {homepost.link} </div>
           </div>
         
         

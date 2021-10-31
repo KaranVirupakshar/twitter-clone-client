@@ -28,13 +28,13 @@ const PostItem = ({homepost}) => {
                             homepost.attachments && homepost.attachments.image &&
                             <img src={homepost.attachments.image}
                                  className="mt-2 wd-border-radius-20px"
-                                 style={{width: "100%"}}/>
+                                 style={{width: "95%"}}/>
                         }
                         {
                             homepost.attachments && homepost.attachments.video &&
-                            <iframe width="100%" height="350px"
+                            <iframe width="95%" height="350px"
                                     className="mt-2 wd-border-radius-20px"
-                                    style={{width: "100%"}}
+                                    style={{width: "95%"}}
                                     src={`https://www.youtube.com/embed/${homepost.attachments.video}`}
                                     title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
