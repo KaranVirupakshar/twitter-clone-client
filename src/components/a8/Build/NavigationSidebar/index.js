@@ -89,18 +89,18 @@ const NavigationSidebar = (
                             </div>
                         </div>
                     </a>
-
-                    <Link to="/a7/twitter/profile" className={`list-group-item list-group-item-action py-3 wd-border-none
-                    ${active === 'Profile' ? 'active' : ''}`}>
+    
+    
+                    <a href="#" className={`list-group-item list-group-item-action py-3 wd-border-none`}>
                         <div className="row">
-                            <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
+                            <div className="col-xxl-2 col-xl-2 col-lg-2 col-sm-2">
                                 <i className="far fa-user"></i>
                             </div>
                             <div className="col-xxl-10 col-xl-8 d-none d-xl-block">
                                 Profile
                             </div>
                         </div>
-                    </Link>
+                    </a>
     
                     <a href="#" className={`list-group-item list-group-item-action py-3 wd-border-none`}>
                         <div className="row">

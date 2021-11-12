@@ -7,9 +7,12 @@ import App from './App';
 import Exam from "./components/learner/exam";
 import Hello from "./components/learner/hello";
 import App2 from "./App2";
+import App3 from "./App3";
+import App4 from "./app4";
+
 
 ReactDOM.render(
-    <App/>,
+    <App4/>,
   document.getElementById('root')
 );
 
