@@ -13,7 +13,7 @@ const EditProfileScreen = () => {
                 <NavigationSidebar active = "Profile"/>
             </div>
             <div className=" col-xxl-6 col-xl-6 col-lg-7 col-md-9 col-sm-10">
-                <EditProfile/><PostList/>
+                <EditProfile/>
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-3 d-none d-lg-block">
                 <PostSummaryList title = "What's happening"/>

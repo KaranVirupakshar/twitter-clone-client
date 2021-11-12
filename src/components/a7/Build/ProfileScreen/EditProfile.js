@@ -52,33 +52,33 @@ const EditProfile = () =>{
                     <li className="list-group-item wd-item-list"
                     style={{'border-top-left-radius': '15px','border-top-right-radius': '15px'}}>  
                         <label>Name</label>  
-                        <input type="text" defaultValue={profileData.firstName} className="form-control" name="name"
+                        <input type="text" defaultValue={profileData.firstName} className="form-control" style={{"background-color": 'black'}} name="name"
                         onChange = {e => setProfileData((value) => ({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Bio</label>
-                        <textarea defaultValue={profileData.bio} className="form-control" name = "bio"
+                        <textarea defaultValue={profileData.bio} className="form-control" style={{"background-color": 'black'}} name = "bio"
                         onChange = {e => setProfileData((value) =>({...value,[e.target.name]: e.target.value}))}> 
                         </textarea>
                     </li>
                     <br/>  
                     <li className="list-group-item wd-item-list">
                         <label>Location</label>
-                        <input type="text" placeholder="Name" defaultValue={profileData.location} className="form-control" name = "location"
+                        <input type="text" placeholder="Name" defaultValue={profileData.location} className="form-control" style={{"background-color": 'black'}} name = "location"
                         onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>  
                     <li className="list-group-item wd-item-list">
                         <label>Website</label>
 
-                        <input type="text" placeholder="Website" defaultValue={profileData.website} className="form-control" name = "website"
+                        <input type="text" placeholder="Website" defaultValue={profileData.website} className="form-control" style={{"background-color": 'black'}} name = "website"
                         onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Birth Date</label>
-                        <input type="text" placeholder="Date" defaultValue={profileData.dateOfBirth} className="form-control" name = "dateOfBirth"
+                        <input type="text" placeholder="Date" defaultValue={profileData.dateOfBirth} className="form-control" style={{"background-color": 'black'}} name = "dateOfBirth"
                         onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>

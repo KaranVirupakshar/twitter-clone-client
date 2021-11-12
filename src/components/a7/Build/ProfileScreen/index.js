@@ -65,10 +65,10 @@ const Profile = () => {
                 {profiles.bio}
             </div>
 
-            <div className="row px-4 py-2 text-muted">
+            <div className="row px-2 py-2 text-muted">
 
-               <span><i className="fas fa-map-marker-alt"></i> &nbsp;{profiles.location} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <i className="fas fa-golf-ball"></i> &nbsp;{profiles.dateOfBirth} &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+               <span><i className="fas fa-map-marker-alt"></i> &nbsp;{profiles.location} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <i className="fas fa-golf-ball"></i> &nbsp;Born {profiles.dateOfBirth} &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <i className="far fa-calendar-alt"></i> &nbsp;Joined {profiles.dateJoined}</span>
             </div>
 
