@@ -11,9 +11,6 @@ const Practice = () => {
     return(
         <div>
             <h3>Practice</h3>
-            <Link to="/a7/hello">
-                Hello
-            </Link> |
             <Link to="/a7/twitter/home">
                 Build
             </Link>
