@@ -39,7 +39,7 @@ const ExploreComponent = () => {
                     <div className="card-body text-white wd-text-large rgba-black-light p-2 wd-bottom-left wd-fonts-bold wd-fonts-size20"> SpaceX's Starship set to take off from base ground of houston this evening
                     </div>
             </div>
-           {PostSummaryList()}
+           {PostSummaryList("")}
 
         </>
     );

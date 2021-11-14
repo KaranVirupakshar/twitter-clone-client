@@ -10,7 +10,7 @@ const Practice = () => {
             <h1>Practice</h1>
             <Link to="/a8/twitter/home">Build</Link>
             <APIExamples/>
-            <ReduxExamples/>
+            {/*<ReduxExamples/>*/}
         </div>
     )
 };

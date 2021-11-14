@@ -1,7 +1,7 @@
 /* global $ */
 import React from "react";
 
-import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebar from "../../../a8/Build/NavigationSidebar";
 import ExploreComponent from "../ExploreScreen/ExploreComponent.js";
 import WhoToFollowList from "../WhoToFollowList";
 
