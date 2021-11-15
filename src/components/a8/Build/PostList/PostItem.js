@@ -1,11 +1,15 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TweetStats from "./TweetStats";
+import {deleteTweet} from "../../../../services/twitterService";
+
 
 const PostItem = ({homepost}) => {
     const dispatch = useDispatch();
     const deleteTweetClickHandler = () => {
-        dispatch({type: 'delete-tweet', homepost})
+        //dispatch({type: 'delete-tweet', homepost});
+        deleteTweet(dispatch, homepost);
+
     }
 
     return(
@@ -13,7 +17,7 @@ const PostItem = ({homepost}) => {
             <table>
                 <tr>
                     <td className="align-text-top">
-                        <img className="rounded-circle wd-avatar-image" width="50px" height="50px"
+                        <img style={{"border-radius":"50%"}} width="50px" height="50px"
                              src={homepost['logo-image']}/>
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>

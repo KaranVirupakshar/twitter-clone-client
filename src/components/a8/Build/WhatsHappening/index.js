@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
+import {postNewTweet} from "../../../../services/twitterService";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
-        dispatch({type: 'create-tweet',
-            tweet: {
-                tweet: whatsHappening
-            }
+        postNewTweet(dispatch, {
+            tweet: whatsHappening
         });
+
     }
     return(
         <>
@@ -17,8 +17,8 @@ const WhatsHappening = () => {
                 <tr>
                     <td style={{verticalAlign: 'top'}}>
                         <img src={'../../../images/profile.jpeg'}
-                             className="rounded-circle"
-                             style={{width: '48px', margin: '16px'}}/>
+                             style={{"border-radius":"50%"}}
+                             style={{width: '48px', margin: '16px', "border-radius":"50%"}}/>
                     </td>
                     <td style={{width: "100%"}}>
                         <textarea value={whatsHappening}

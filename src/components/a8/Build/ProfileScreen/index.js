@@ -28,7 +28,7 @@ const Profile = () => {
                         <img src= {profiles.bannerPicture} height={"325px"} />
 
                         <div className='position-absolute' style={{top:"270px", left : "5px"}}>
-                            <img className="img-fluid rounded-circle bg-white" src={profiles.profilePicture} width={'100px'} height={"100px"}/>
+                            <img className="img-fluid rounded-circle bg-white"  src={profiles.profilePicture} width={'100px'} height={"100px"}/>
                         </div>
                     </div>
                 </div>
