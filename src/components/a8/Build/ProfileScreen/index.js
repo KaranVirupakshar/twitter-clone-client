@@ -15,7 +15,7 @@ const Profile = () => {
                 </div>
                 <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 px-5">
                     <div className="row fw-bold fs-6">{profiles.firstName} </div>
-                    <div className="row fs-10 text-muted">5188 tweets</div>
+                    <div className="row fs-10 text-muted">5178 tweets</div>
                 </div>
 
 
