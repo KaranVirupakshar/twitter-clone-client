@@ -11,7 +11,7 @@ const EditProfile = () =>{
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
-       // dispatch({type:'save-information', newInput})
+       // dispatch({type:'save', newInput})
         updateProfile(dispatch, newInput);
     }
 
