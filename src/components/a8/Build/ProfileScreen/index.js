@@ -1,10 +1,14 @@
-import React from 'react';
-import {useSelector} from "react-redux";
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 import { Link, Route } from 'react-router-dom';
 import EditProfile from "./EditProfile";
+import {fetchProfile} from "../../../../services/profileService";
+
 
 const Profile = () => {
     const profiles = useSelector((state) => state.profile.profile);
+    const dispatch = useDispatch();
+    useEffect(() => fetchProfile(dispatch), [])
     return(
 
         <div className="" >
@@ -47,12 +51,12 @@ const Profile = () => {
                 <div className="col-xxl-3 col-xl-4 col-lg-5 col-md-4 col-sm-5 col-4 ">
                 <div className="btn-group  position-relative " style={{"width": "100%"}}>
 
-                    <Link to="/a7/twitter/profile/editProfile">
+                    <Link to="/a8/twitter/profile/editProfile">
                         <button className="btn btn-light rounded-pill mt-3">
                             <strong>Edit Profile</strong>
                         </button>
                     </Link>
-                    <Route path={"/a7/twitter/profile/editProfile"}>
+                    <Route path={"/a8/twitter/profile/editProfile"}>
                         <EditProfile/>
                     </Route>
                 </div>

@@ -2,6 +2,8 @@
 import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
+import {likeTweet} from "../../../../services/twitterService";
+import {updateProfile} from "../../../../services/profileService";
 
 const EditProfile = () =>{
     const profileData = useSelector((state) => state.profile.profile)
@@ -9,14 +11,15 @@ const EditProfile = () =>{
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
-        dispatch({type:'save-information', newInput})
+       // dispatch({type:'save-information', newInput})
+        updateProfile(dispatch, newInput);
     }
 
     return(
         <>
             <div className = "row">
                 <div className = "col-2">
-                    <Link to="/a7/twitter/profile"><i className="fas fa-2x fa-arrow-left"></i></Link>
+                    <Link to="/a8/twitter/profile"><i className="fas fa-2x fa-arrow-left"></i></Link>
                 </div>
                 <div className = "col-8">
                     <div className = "row pb-0 mb-0 text-muted">
@@ -24,7 +27,7 @@ const EditProfile = () =>{
                     </div>
                 </div>
                 <div className="col-2">
-                    <Link to="/a7/twitter/profile">
+                    <Link to="/a8/twitter/profile">
                     <button className="btn btn-light rounded-pill" onClick={saveChanges}>
                        <strong>Save</strong>
                     </button>

@@ -4,7 +4,7 @@ import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "../../a8/Build/HomeScreen/index";
 import who from "../../../reducers/who";
 import tweets from "../../../reducers/tweetsN";
-import profile from "../../../reducers/profile";
+import profile from "../../../reducers/profileN";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import ProfileScreen from "./ProfileScreen/ProfileScreen";
