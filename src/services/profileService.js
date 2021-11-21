@@ -11,11 +11,13 @@ export const fetchProfile = (dispatch) =>
         );
 
 export const updateProfile = (dispatch, profile) =>
-    fetch(`${PROFILE_API}/${profile.firstName}/update`, {
+    fetch(PROFILE_API, {
         method: 'PUT'
     })
-        .then(response =>
+        .then(response => response.json())
+        .then(profiles =>
             dispatch({
-                type: 'like-tweet',
+                type: 'save-information',
                 profile
-            }));
+            })
+        );

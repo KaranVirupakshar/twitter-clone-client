@@ -13,7 +13,7 @@ export const fetchAllTweets = (dispatch) =>
 export const postNewTweet = (dispatch, newTweet) =>
     fetch(TWEET_API, {
         method: 'POST',
-        body: JSON.stringify(newTweet),
+        body: JSON.stringify(newTweet.new),
         headers: {
             'content-type': 'application/json'
         }

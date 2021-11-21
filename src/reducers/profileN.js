@@ -7,12 +7,16 @@ const initialState = {
 const profile = (state = initialState, action) =>{
     switch(action.type){
         case 'fetch-profile':
+            console.log("newI")
+
             return({
                 profile: action.profile
             })
             break;
 
         case 'save-information':
+
+            console.log("newInput" + action.newInput.name)
 
             if(action.newInput.name){
                 initialState.profile['firstName'] = action.newInput['name'];

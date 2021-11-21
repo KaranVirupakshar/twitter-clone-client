@@ -40,6 +40,8 @@ const tweets = (state = initialState, action) => {
             break;
 
         case 'create-tweet':
+            console.log("mbvmbvhjm")
+
             const tweet = {
                 _id: (new Date()).getTime() + '',
                 "topic": "Web Development",
