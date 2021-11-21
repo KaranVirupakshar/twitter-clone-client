@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
-import {updateProfile} from "../../../../services/profileService";
+import {fetchProfile, updateProfile} from "../../../../services/profileService";
 
 
 const EditProfile = () =>{

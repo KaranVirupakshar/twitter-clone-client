@@ -30,11 +30,17 @@ const profile = (state = initialState, action) =>{
             if(action.newInput.location){
                 initialState.profile['location'] = action.newInput['location'];
             }
+            if(action.newInput.website){
+                initialState.profile['website'] = action.newInput['website'];
+            }
 
             return {
                 ...state,
             };
+            break;
         default:
+            console.log("default")
+
             return (state)
     }
 }
