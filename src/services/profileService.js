@@ -11,13 +11,17 @@ export const fetchProfile = (dispatch) =>
         );
 
 export const updateProfile = (dispatch, profile) =>
-    fetch(PROFILE_API, {
-        method: 'PUT'
+    fetch('http://localhost:4005/api/profile/update', {
+        method: 'POST',
+        body: JSON.stringify(profile.new),
+        headers: {
+            'content-type': 'application/json'
+        }
     })
         .then(response => response.json())
         .then(profiles =>
             dispatch({
                 type: 'save-information',
-                profile
+                profiles
             })
         );
