@@ -19,7 +19,7 @@ export const updateProfile = (dispatch, profile) =>
         }
     })
         .then(response => response.json())
-        .then(response =>
+        .then(profile =>
             dispatch({
                 type: 'fetch-profile',
                 profile
