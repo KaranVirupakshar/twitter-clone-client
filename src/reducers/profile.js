@@ -5,6 +5,7 @@ const initialState = {
 };
 
 const profile = (state = initialState, action) =>{
+
     switch(action.type){
         case 'save-information':
 

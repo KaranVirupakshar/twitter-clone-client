@@ -10,7 +10,6 @@ const Profile = () => {
     const dispatch = useDispatch();
     useEffect(() => fetchProfile(dispatch), [])
     return(
-
         <div className="" >
 
             <div className="row ">
@@ -24,9 +23,7 @@ const Profile = () => {
 
 
             </div>
-
             <div className='pb-3 row'>
-
                 <div className="position-relative pb-5">
                     <div className="row">
                         <img src= {profiles.bannerPicture} height={"325px"} />
@@ -36,10 +33,7 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
 
             <div className="row px-4">
                 <div className="col-xxl-9 col-xl-8 col-lg-7 col-md-8 col-sm-7 col-8">
@@ -71,25 +65,18 @@ const Profile = () => {
 
             <div className="row px-2 py-2 text-muted">
 
-               <span><i className="fas fa-map-marker-alt"></i> &nbsp;{profiles.location} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span><i className="fas fa-map-marker-alt"></i> &nbsp;{profiles.location} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <i className="fas fa-golf-ball"></i> &nbsp;Born {profiles.dateOfBirth} &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    <i className="far fa-calendar-alt"></i> &nbsp;Joined {profiles.dateJoined}</span>
             </div>
-
             <div className="row px-2 py-2 mb-3">
                 <div>
                     <span className='col px-1'><span className='fw-bold'>{profiles.followingCount}</span> <span className='text-muted'>&nbsp;Following</span> </span>
                     <span className='col px-2'><span className='fw-bold'>{profiles.followersCount}</span> <span className='text-muted'>&nbsp;Followers</span> </span>
                 </div>
             </div>
-
-
-
         </div>
-
     );
-
-
 }
 
 

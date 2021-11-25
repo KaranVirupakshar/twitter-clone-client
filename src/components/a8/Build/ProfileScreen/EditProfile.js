@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
-import {fetchProfile, updateProfile} from "../../../../services/profileService";
+import {updateProfile} from "../../../../services/profileService";
 
 
 const EditProfile = () =>{
@@ -10,7 +10,7 @@ const EditProfile = () =>{
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
-       // dispatch({type:'save', newInput})
+        // dispatch({type:'save', newInput})
         updateProfile(dispatch, newInput);
     }
 
@@ -27,9 +27,9 @@ const EditProfile = () =>{
                 </div>
                 <div className="col-2">
                     <Link to="/a8/twitter/profile">
-                    <button className="btn btn-light rounded-pill" onClick={saveChanges}>
-                       <strong>Save</strong>
-                    </button>
+                        <button className="btn btn-light rounded-pill" onClick={saveChanges}>
+                            <strong>Save</strong>
+                        </button>
                     </Link>
                 </div>
             </div>
@@ -52,36 +52,36 @@ const EditProfile = () =>{
             <div className = "wd-details-form">
                 <ul className="list-group">
                     <li className="list-group-item wd-item-list"
-                    style={{'border-top-left-radius': '15px','border-top-right-radius': '15px'}}>  
-                        <label>Name</label>  
+                        style={{'border-top-left-radius': '15px','border-top-right-radius': '15px'}}>
+                        <label>Name</label>
                         <input type="text" defaultValue={profileData.firstName} className="form-control" style={{"background-color": 'black'}} name="name"
-                        onChange = {e => setProfileData((value) => ({...value,[e.target.name] : e.target.value}))}/>
+                               onChange = {e => setProfileData((value) => ({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Bio</label>
                         <textarea defaultValue={profileData.bio} className="form-control" style={{"background-color": 'black'}} name = "bio"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name]: e.target.value}))}> 
+                                  onChange = {e => setProfileData((value) =>({...value,[e.target.name]: e.target.value}))}>
                         </textarea>
                     </li>
-                    <br/>  
+                    <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Location</label>
                         <input type="text" placeholder="Name" defaultValue={profileData.location} className="form-control" style={{"background-color": 'black'}} name = "location"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
+                               onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
                     </li>
-                    <br/>  
+                    <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Website</label>
 
                         <input type="text" placeholder="Website" defaultValue={profileData.website} className="form-control" style={{"background-color": 'black'}} name = "website"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
+                               onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>
                     <li className="list-group-item wd-item-list">
                         <label>Birth Date</label>
                         <input type="text" placeholder="Date" defaultValue={profileData.dateOfBirth} className="form-control" style={{"background-color": 'black'}} name = "dateOfBirth"
-                        onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
+                               onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value}))}/>
                     </li>
                     <br/>
                     <br></br>

@@ -5,9 +5,12 @@ const initialState = {
 };
 
 const profile = (state = initialState, action) =>{
+   console.log("Act type:"+action.type)
+    console.log("Act input:"+action.newInput)
+
     switch(action.type){
         case 'fetch-profile':
-            console.log("newI")
+            console.log("Inside fetch pro")
 
             return({
                 profile: action.profile
@@ -16,7 +19,7 @@ const profile = (state = initialState, action) =>{
 
         case 'save-information':
 
-            console.log("newInput" + action.newInput.name)
+            console.log("Inside save info")
 
             if(action.newInput.name){
                 initialState.profile['firstName'] = action.newInput['name'];
