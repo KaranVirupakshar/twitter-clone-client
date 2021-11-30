@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import PostItem from "./PostItem.js";
 import {useSelector} from "react-redux";
 import {useDispatch} from "react-redux";
-import {fetchAllTweets} from "../../../../services/twitterService";
+import {fetchAllTweets} from "../../../../services/twitterServiceA9";
 
 
 

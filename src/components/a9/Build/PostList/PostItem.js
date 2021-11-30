@@ -1,7 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
 import TweetStats from "./TweetStats";
-import {deleteTweet} from "../../../../services/twitterService";
+import {deleteTweet} from "../../../../services/twitterServiceA9";
 
 
 const PostItem = ({homepost}) => {
@@ -9,7 +9,6 @@ const PostItem = ({homepost}) => {
     const deleteTweetClickHandler = () => {
         //dispatch({type: 'delete-tweet', homepost});
         deleteTweet(dispatch, homepost);
-
     }
 
     return(

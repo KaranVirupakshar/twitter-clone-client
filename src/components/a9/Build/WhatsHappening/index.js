@@ -1,12 +1,26 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet} from "../../../../services/twitterService";
+import {postNewTweet} from "../../../../services/twitterServiceA9";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tweetClickHandler = () => {
         postNewTweet(dispatch, {
+            topic: "Web Development",
+            userName: "Elon Musk",
+            posted: Date.now(),
+            verified: false,
+            handle: "elonmusk",
+            liked: false,
+            time: "2h",
+            "avatar-image": "https://github.com/jannunzi/web-dev/blob/master/public/images/elon.jpg?raw=true",
+            "logo-image": "https://github.com/jannunzi/web-dev/blob/master/public/images/elon.jpg?raw=true",
+            stats: {
+                comments: 123,
+                retweets: 234,
+                likes: 345
+            },
             tweet: whatsHappening
         });
 
