@@ -5,8 +5,6 @@ const initialState = {
 };
 
 const profile = (state = initialState, action) =>{
-   console.log("Act type:"+action.type)
-    console.log("Act input:"+action.newInput)
 
     switch(action.type){
         case 'fetch-profile':
@@ -42,8 +40,6 @@ const profile = (state = initialState, action) =>{
             };
             break;
         default:
-            console.log("default")
-
             return (state)
     }
 }

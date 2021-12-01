@@ -2,17 +2,19 @@
 import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
-import {updateProfile} from "../../../../services/profileService";
+import {updateProfile} from "../../../../services/profileServiceA9";
 
+const selectProfile = (state) => state.profile.profile;
 
 const EditProfile = () =>{
     const profileData = useSelector((state) => state.profile.profile)
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
-       // dispatch({type:'save', newInput})
+        // dispatch({type:'save', newInput})
         updateProfile(dispatch, newInput);
     }
+
 
     return(
         <>

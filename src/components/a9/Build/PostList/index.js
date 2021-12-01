@@ -11,7 +11,7 @@ const selectAllTweets = (state) => state.tweets.tweets;
 const PostList = () => {
     const homepost = useSelector(selectAllTweets);
     const dispatch = useDispatch();
-    useEffect(() => fetchAllTweets(dispatch), [])
+    useEffect(() => fetchAllTweets(dispatch))
     return (
             <ul className="list-group">
             {

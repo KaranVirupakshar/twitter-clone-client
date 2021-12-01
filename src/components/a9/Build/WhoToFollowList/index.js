@@ -1,9 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import WhoToFollowListItem from "./WhoToFollowListItem";
 import {useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
+import {fetchAllWhos} from "../../../../services/whoserviceA9";
+
+const selectAllWhos= (state) => state.who.who;
+
 
 const WhoToFollowList = () => {
-    const who = useSelector((state) => state.who);
+    const who = useSelector(selectAllWhos);
+    const dispatch = useDispatch();
+    useEffect(() => fetchAllWhos(dispatch), [])
     return (
             <ul className="list-group">
             <a href="#" className="list-group-item list-group-item-action wd-border-none">

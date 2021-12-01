@@ -2,7 +2,7 @@ import React from "react";
 import {Link, Route} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "../../a9/Build/HomeScreen/index";
-import who from "../../../reducers/who";
+import who from "../../../reducers/whoN";
 import tweets from "../../../reducers/tweetsN";
 import profile from "../../../reducers/profileN";
 import {combineReducers, createStore} from "redux";

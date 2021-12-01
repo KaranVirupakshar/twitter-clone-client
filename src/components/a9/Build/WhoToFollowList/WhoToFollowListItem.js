@@ -1,13 +1,9 @@
 import React from "react";
+import {useDispatch} from "react-redux";
 
-const WhoToFollowListItem = (
-    {
-        who = {
-            avatarIcon: '../../../images/nasa.png',
-            userName: 'NASA',
-            handle: 'NASA',
-               }
-        }) => {
+const WhoToFollowListItem = ({who}) => {
+    const dispatch = useDispatch();
+
     return(
             <a href="#" className="list-group-item list-group-item-action wd-border-none">
                 <div className="row">
